@@ -3,13 +3,33 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Clock from './Components/Clock';
 
 var element = React.createElement(
     'h1', 
     { className: 'greeting' }, 
     'Hello, world!'
 );
-ReactDOM.render(element, document.getElementById('root'));
+
+element = <h1>Hello, World</h1>;  // JSX Expression
+
+const name = "Anas";
+element = (
+    <div>
+        <h1>Hello, World</h1>
+        <h2>My name is {name}</h2>  
+    </div>
+);
+
+const currentTime = new Date().toLocaleTimeString();
+const clock = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {currentTime}.</h2>
+    </div>
+  );
+
+ReactDOM.render(<Clock/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
