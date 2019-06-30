@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Clock from './Components/Clock';
 import LoginControl from './Components/LoginControl';
+import ToggleButton from './Components/ToggleButton';
 
 var element = React.createElement(
     'h1', 
@@ -30,9 +31,14 @@ const clock = (
     </div>
   );
 
+const numbers = [1,2,3,4,5];
+ 
+const listItems = numbers.map(
+  (number) =>  <li>{number}</li>
+);
+const list = <ul>{listItems}</ul>;
 
-
-ReactDOM.render(<LoginControl/>, document.getElementById('root'));
+ReactDOM.render(<ToggleButton/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.buttonOFF{
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin: 30px;
+  font-size: 16px
+}
+.buttonON{
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  margin: 30px;
+  font-size: 16px
+}
